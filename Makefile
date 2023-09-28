@@ -1,9 +1,9 @@
 KEYWORD=FIXED
 
-run: build
-	docker run --rm keyword-release-action $(KEYWORD)
-build: 
-	docker build --tag keyword-release-action .
-test:
+sudo run: build
+	sudo docker run --rm keyword-release-action $(KEYWORD)
+sudo build: 
+	sudo docker build --tag keyword-release-action .
+sudo test:
 	./entrypoint.sh $(KEYWORD)
 
