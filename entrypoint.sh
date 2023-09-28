@@ -26,7 +26,7 @@ then
 	VERSION=$(date +"%m-%d-%y")
 
     DATA="$(printf '{tag_name":"V%s",' $VERSION)"
-    DATA="${DATA} $(printf '"target_commitish":"master",')"
+    DATA="${DATA} $(printf '"target_commitish":"main",')"
     DATA="${DATA} $(printf '"name":"v%s",'$VERSION)"
     DATA="${DATA} $(printf '"body":"Automated release based on keyword: %s",' "$*")"
     DATA="${DATA} $(printf '"draft":false, "prerelease":false}')"
