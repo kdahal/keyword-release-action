@@ -1,6 +1,5 @@
 FROM alpine
 
-RUN apt-get update && apt-get install -y sudo
 RUN apk add --no-cache\
 		bash \
 		httpie \
